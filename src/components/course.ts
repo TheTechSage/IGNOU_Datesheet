@@ -148,7 +148,7 @@ export const courses_3: Course[] = [
         course_name: "Accountancy and Financial Management",
         date: "31/12/2024",
         day: "TUE",
-        shift: "Evening",
+        shift: "Morning",
     },
     {
         id: 18,

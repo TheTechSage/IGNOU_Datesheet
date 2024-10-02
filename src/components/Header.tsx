@@ -47,7 +47,8 @@ export default function Header() {
                             <Link
                                 key={item.name}
                                 to={item.href}
-                                className="text-base font-semibold leading-6 text-gray-900 hover:border-b-4 hover:border-sky-500 active:border-sky-500 active:border-b-2"
+                                className="text-base font-semibold leading-6 text-gray-900 
+                                hover:border-b-4 hover:border-sky-500 active:border-sky-500 active:border-b-4"
                             >
                                 {item.name}
                             </Link>
@@ -69,7 +70,9 @@ export default function Header() {
                     className="lg:hidden"
                 >
                     <div className="fixed inset-0 z-50" />
-                    <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <DialogPanel 
+                        className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto
+                        bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
                             <Link to="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Logo</span>
@@ -98,7 +101,8 @@ export default function Header() {
                                         <Link
                                             key={item.name}
                                             to={item.href}
-                                            className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-sky-500 active:bg-sky-500"
+                                            className="block px-3 py-2 -mx-3 text-base font-semibold 
+                                            leading-7 text-gray-900 rounded-lg hover:bg-sky-500 active:bg-sky-500"
                                         >
                                             {item.name}
                                         </Link>
