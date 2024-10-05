@@ -38,19 +38,19 @@ const CustomTableRow: FC = () => {
 export default function NewTable() {
     return (
         <>
-            <div className="bg-gradient-to-r from-slate-800 to-neutral-950 to-80% text-slate-100">
+            <div className="bg-gradient-to-r from-slate-800 to-neutral-950 to-80% text-slate-100 scroll-smooth">
                 <div className="text-center py-8 font-semibold text-xl">
                     <h1>IGNOU MCA Dec 2024 Datesheet</h1>
                 </div>
                 <div
-                    className="flex pb-14 max-[460px]:px-0 px-2 "
+                    className="flex pb-14 max-[460px]:px-0 px-2"
                 >
                     <Table
                         className="relative justify-center p-1 mx-auto overflow-hidden border border-separate 
-                    rounded-lg table-auto max-w-fit sm:max-w-screen-sm lg:max-w-screen-md 
+                    rounded-lg table-auto max-w-fit sm:max-w-screen-sm lg:max-w-screen-md  overflow-x-hidden 
                     border-slate-500"
                     >
-                        <TableCaption className="text-white">
+                        <TableCaption className="text-white pb-4">
                             IGNOU MCA Dec 2024 datesheet.
                         </TableCaption>
 

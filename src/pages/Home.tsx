@@ -1,11 +1,41 @@
 "use client";
 
 import { Link } from "react-router-dom";
+import VisitorCounter from "./VisitorCounter.tsx";
+import { useEffect, useRef } from "react";
 
 export default function App() {
+    const customDivRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (customDivRef.current) {
+            const div = customDivRef.current;
+            // Set the custom attributes
+            div.setAttribute("animduration", "6111");
+            div.setAttribute("ns", "https://ignou-datesheet.netlify.app");
+            div.setAttribute("bg", "transparent");
+            div.setAttribute("color", "rgb(60, 40, 25)");
+            div.setAttribute("startnumber", "100");
+            div.setAttribute("updatenumber", "1");
+            div.setAttribute("action", "rate");
+            div.setAttribute("key", "sitewide");
+            div.setAttribute("nolink", "true");
+        }
+    }, []);
+
     return (
         <>
-            <div className="bg-white max-h-[calc(100dvh-3.5rem)]">
+            <div className="flex h-1 justify-center md:justify-end px-8 max-w-full">
+                <div 
+                    className="counterapi"
+                    style={{maxHeight:"44px"}}
+                    ref={customDivRef}
+                >
+                    <VisitorCounter />
+                </div>
+            </div>
+            
+            <div className="bg-white max-h-[calc(100dvh-18.5rem)] pb-8 md:pb-8">
                 <div className="relative px-6 isolate lg:px-8">
                     <div
                         aria-hidden="true"
@@ -43,11 +73,11 @@ export default function App() {
                                     Get started
                                 </Link>
                                 {/* <a
-                                href="#"
-                                className="text-sm font-semibold leading-6 text-gray-900"
-                            >
-                                Learn more <span aria-hidden="true">→</span>
-                            </a> */}
+                                    href="#"
+                                    className="text-sm font-semibold leading-6 text-gray-900"
+                                >
+                                    Learn more <span aria-hidden="true">→</span>
+                                </a> */}
                             </div>
                         </div>
                     </div>

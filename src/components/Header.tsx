@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import logo from "/src/assets/ignou_logo.svg"
 
 const navigation = [
     { name: "Home", href: "/" },
@@ -27,12 +28,12 @@ export default function Header() {
                             <span className="sr-only">Logo</span>
                             <img
                                 alt="logo"
-                                src="src/assets/ignou_logo.svg"
+                                src={logo}
                                 className="w-auto h-8"
                             />
                         </Link>
                     </div>
-                    <div className="flex lg:hidden">
+                    <div className="flex md:hidden">
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(true)}
@@ -42,7 +43,7 @@ export default function Header() {
                             <Bars3Icon aria-hidden="true" className="w-6 h-6" />
                         </button>
                     </div>
-                    <div className="justify-center flex-1 hidden lg:flex lg:gap-x-40 min-h-[28px]">
+                    <div className="justify-center flex-1 hidden md:flex lg:gap-x-40 md:gap-x-28 min-h-[28px]">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
@@ -67,7 +68,7 @@ export default function Header() {
                 <Dialog
                     open={mobileMenuOpen}
                     onClose={setMobileMenuOpen}
-                    className="lg:hidden"
+                    className="md:hidden"
                 >
                     <div className="fixed inset-0 z-50" />
                     <DialogPanel 
@@ -78,7 +79,7 @@ export default function Header() {
                                 <span className="sr-only">Logo</span>
                                 <img
                                     alt="logo"
-                                    src="src/assets/ignou_logo.svg"
+                                    src={logo}
                                     className="w-auto h-8"
                                 />
                             </Link>

@@ -36,6 +36,14 @@ package-lock.json
 /build
 /dist
 dist-ssr
+tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
+
+# Other config files
+eslint.config.js
+
+# Shadcn files
+components.json
 
 # TypeScript Cache
 .tsbuildinfo
