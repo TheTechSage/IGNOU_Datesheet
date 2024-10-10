@@ -55,14 +55,19 @@ export default function NewTable() {
                                 </p>
                                 <p className="py-4 text-wrap">
                                     <span className="inline-block underline p-1 bg-yellow-500 text-black rounded">
-                                        (without Late fee.
-                                    </span> Standard exam fee is Rs. 200/- per theory course & Rs. 300/- Per 
-                                    practical course Upto 4 Credits & Rs. 500/- per practical course for Above 4 Credits.)
+                                        (without)
+                                    </span> Late fee. Standard exam fee is Rs. 200/- per Theory course & Rs. 300/- per 
+                                    Practical course Upto 4 credits & Rs. 500/- per Practical course for Above 4 credits.
                                 </p>
                                 <p className="py-2 font-bold text-md border px-4 my-2 rounded">
                                     # 16th October 2024 to 31st October 2024 (upto 6 PM)
                                 </p>
-                                <p><span className="inline-block underline p-1 mt-2 bg-yellow-500 text-black rounded">(with Late fee</span> of Rs.1100/- plus standard exam fee.)</p>
+                                <p>
+                                    <span 
+                                        className="inline-block underline p-1 mt-2 bg-yellow-500 text-black rounded">
+                                        (with)
+                                    </span> Late fee of Rs.1100/- plus standard exam fee.
+                                </p>
                             </div>
                         </div>
 
@@ -74,18 +79,38 @@ export default function NewTable() {
                         </div>
                         
                         <div>
-
-                            <p className="py-4 capitalize font-semibold text-xl">synopsis last dates (for July 2024 semester) :</p>
+                            <p className="py-4 capitalize font-semibold text-xl">
+                                synopsis last dates (for January 2024 semester) :
+                            </p>
                             <div className="lg:max-w-4xl ">
                                 <p className="py-2 font-bold text-md border px-4 rounded">
-                                    # 1st  October to 31st  December
+                                    # 1st April 2024 to 30th June 2024
+                                </p>
+                            </div>
+                            <p className="py-4 capitalize font-semibold text-xl">
+                                synopsis last dates (for July 2024 semester) :
+                            </p>
+                            <div className="lg:max-w-4xl ">
+                                <p className="py-2 font-bold text-md border px-4 rounded">
+                                    # 1st  October 2024 to 31st  December 2024
                                 </p>
                             </div>
                             
-                            <p className="py-4 capitalize font-semibold text-xl">project last dates (for those who submitted synopsis for July 2024 semester) :</p>
+                            <p className="py-4 capitalize font-semibold text-xl">
+                                project last dates (for those who submitted synopsis for January 2024 session) :
+                            </p>
                             <div className="lg:max-w-4xl ">
                                 <p className="py-2 font-bold text-md border px-4 rounded">
-                                    # 1st  July to 30th  September
+                                    # 1st July 2024 to 30th September 2024
+                                </p>
+                            </div>
+
+                            <p className="py-4 capitalize font-semibold text-xl">
+                                project last dates (for those who will submit synopsis for July 2024 session) :
+                            </p>
+                            <div className="lg:max-w-4xl ">
+                                <p className="py-2 font-bold text-md border px-4 rounded">
+                                    # 1st  January 2025 to 31st  March 2025
                                 </p>
                             </div>
                         </div>
