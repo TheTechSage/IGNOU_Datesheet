@@ -10,6 +10,7 @@ import Home from './pages/Home.tsx';
 import Datesheet from './pages/Datesheet.tsx';
 import ErrorPage from './pages/ErrorPage.tsx';
 import Layout from './Layouts/Layout.tsx';
+import Dates from './pages/Dates.tsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
         element: <Home />,
         errorElement: <ErrorPage />,
       },
+      {
+        path: "dates",
+        element: <Dates />,
+        errorElement: <ErrorPage />,
+      },    
       {
         path: "datesheet",
         element: <Datesheet />,

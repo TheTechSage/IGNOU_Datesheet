@@ -6,6 +6,7 @@ import logo from "/src/assets/ignou_logo.svg"
 
 const navigation = [
     { name: "Home", href: "/" },
+    { name: "Important Dates", href: "/dates" },
     { name: "Datesheet", href: "/datesheet" },
     // { name: "Product", href: "#" },
     // { name: "Features", href: "#" },
